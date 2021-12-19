@@ -20,7 +20,7 @@ Lakeside, CA 92040
 
 <script>
   function initMap() {
-    const location = { lat: 32.8552268, lng: -116.932834 };
+    const location = { lat: 32.85515, lng: -116.93069 };
     const map = new google.maps.Map(document.getElementById("google-map"), {
       zoom: 15,
       center: location,
