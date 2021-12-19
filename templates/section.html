@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ section.title }} - {{ config.title }}{% endblock %}
+
+{% block body %}
+<h1 class="logo"><a href="{{ config.base_url }}/" class="no-border hover-underline">{{ config.title }}</a></h1>
+
+<nav>
+  {% for ancestor in section.ancestors %}
+    {% set section = get_section(path=ancestor) %}
+    {% if section.path == "/" %}
+      <a href="{{ config.base_url }}{{ section.path }}" class="no-border hover-underline">Home</a>
+    {% else %}
+      <span class="breadcrumb-sep">/</span>
+      <a href="{{ config.base_url }}/{{ section.path }}" class="no-border hover-underline">{{ section.title }}</a>
+    {% endif %}
+  {% endfor %}
+</nav>
+
+<main class="{{ section.extra.main_class | default(value="") }}">
+
+  <hr />
+
+  <h2>{{ section.title }}</h2>
+
+  {{ section.content | safe }}
+
+  {% set_global pages = paginator.pages %}
+  {% set section = get_section(path="posts/_index.md", metadata_only=true) %}
+  {% set subsections = section.subsections %}
+  {% for subsection_path in subsections %}
+    {% set subsection = get_section(path=subsection_path) %}
+    {% set_global pages = pages | concat(with=subsection.pages) %}
+  {% endfor %}
+  {% set_global pages = pages | sort(attribute="date") | reverse %}
+  {% for page in pages %}
+    {% include "article.html" %}
+  {% endfor %}
+</main>
+{% endblock %}

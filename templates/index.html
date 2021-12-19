@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block title %}{{ config.title }}{% endblock %}
+
+{% block body %}
+<main class="home">
+  <div class="header">
+    <img src="/images/logo.svg" class="logo" alt="Logo"/>
+    <br />
+    <div class="text">
+      <p class="title">San Diego</p>
+      <p class="subtitle">Killifish and Livebearer Group</p>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p>{{ section.extra.short_intro }}</p>
+  </div>
+
+  <div class="flex">
+    <section class="posts-section">
+      <h2>General Information</h2>
+      {{ section.content | safe }}
+      <br />
+    </section>
+
+    <section class="projects-section">
+      <h2>Pages</h2>
+
+      <ul class="projects">
+        <li>
+          <a href="{{ config.base_url }}/about/">
+            <i class="fas fa-info-circle"></i>About
+          </a>
+          <p>Introduction and general information about our club</p>
+        </li>
+        <li>
+          <a href="{{ config.base_url }}/members/">
+            <i class="fas fa-user"></i>Members
+          </a>
+          <p>A catalog of registered club members, as well as their personal homepages</p>
+        </li>
+        <li>
+          <a href="{{ config.base_url }}/posts/">
+            <i class="fas fa-comment"></i>Posts
+          </a>
+          <p>Our library of member-contributed posts: species information, set up guides, etc.</p>
+        </li>
+        <li>
+          <a href="{{ config.base_url }}/highlights/">
+            <i class="fas fa-star"></i>Highlights
+          </a>
+          <p>Our species highlight of the month</p>
+        </li>
+        <li>
+          <a href="{{ config.base_url }}">
+            <i class="fab fa-facebook-square"></i>Facebook
+          </a>
+          <p>Out Facebook homepage for event updates and Q&A</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+</main>
+{% endblock %}

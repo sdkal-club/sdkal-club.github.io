@@ -1,0 +1,8 @@
+  <article id="{{ page.slug }}">
+    <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+    <div class="post-metadata">
+      <div class="date-published">
+        <time datetime="{{ page.date }}">{{ page.date | date(format="%d %B %Y") }}</time>
+      </div>
+    </div>
+  </article>

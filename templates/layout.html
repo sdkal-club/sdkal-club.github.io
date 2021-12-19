@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ config.base_url }}/screen.css" type="text/css" charset="utf-8" />
+  <link rel="alternate" type="application/rss+xml" href="{{ config.base_url }}/rss.xml" title="{{ config.title }}" />
+  {% block metadata %}{% endblock %}
+</head>
+<body class="{{ section.extra.body_class | default(value="") }}">
+  {% block body %}{% endblock %}
+  <footer class="text-center">
+    <div class="copyright">
+      Copyright © {{ now() | date(format="%Y") }} {{ config.extra.author }} &mdash;
+      <a href="{{ config.extra.source }}">Website Sources</a>
+    </div>
+  </footer>
+  <script data-goatcounter="https://wezm.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
+

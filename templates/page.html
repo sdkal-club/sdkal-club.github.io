@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ page.title }} - {{ config.title }}{% endblock %}
+
+{% block metadata %}
+    <meta property="og:url" content="{{ page.permalink }}" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.summary | default(value="") | striptags }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_US" />
+{% endblock %}
+
+{% block body %}
+<h1 class="logo"><a href="{{ config.base_url }}/" class="no-border hover-underline">{{ config.title }}</a></h1>
+
+<nav>
+  {% for ancestor in page.ancestors %}
+    {% set section = get_section(path=ancestor) %}
+    {% if section.path == "/" %}
+      <a href="{{ config.base_url }}{{ section.path }}" class="no-border hover-underline">Home</a>
+    {% else %}
+      <span class="breadcrumb-sep">/</span>
+      <a href="{{ config.base_url }}/{{ section.path }}" class="no-border hover-underline">{{ section.title }}</a>
+    {% endif %}
+  {% endfor %}
+</nav>
+
+<article id="{{page.slug }}">
+  <h2>
+    <a href="{{ page.permalink }}">{{ page.title }}</a>
+  </h2>
+  {% if page.date %}
+  <div class="post-metadata">
+    <div class="date-published">
+      <time datetime="{{ page.date }}">{{ page.date | date(format="%d %B %Y") }}</time>
+    </div>
+    {%- if page.extra.updated %}
+    <div class="date-updated">
+      <span class="ornament">&middot;</span><em><span class="updated small-caps">updated</span>
+        <time datetime="{{ page.extra.updated }}">{{ page.extra.updated | date(format="%d %B %Y") }}</time>
+      </em>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <div class="post-body">
+    {{ page.content | safe }}
+  </div>
+
+</article>
+{% endblock %}

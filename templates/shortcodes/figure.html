@@ -1,0 +1,13 @@
+<figure class="text-center">
+  <a href="{{ config.base_url }}/{{ link }}">
+  {% if resize_width %}
+    {% set image = resize_image(path=image, width=resize_width, op="fit_width", quality=quality | default(value=75)) %}
+    <img src="{{ image.url }}" alt="{{ alt }}" />
+  {% elif width %}
+    <img src="{{ config.base_url }}/{{ image }}" width="{{ width }}" alt="{{ alt }}" />
+  {% else %}
+    <img src="{{ config.base_url }}/{{ image }}" alt="{{ alt }}" />
+  {% endif %}
+  </a>
+  <figcaption>{{ caption }}</figcaption>
+</figure>
