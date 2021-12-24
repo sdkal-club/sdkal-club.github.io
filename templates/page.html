@@ -23,26 +23,30 @@
       <a href="{{ config.base_url }}/{{ section.path }}" class="no-border hover-underline">{{ section.title }}</a>
     {% endif %}
   {% endfor %}
+  <span class="breadcrumb-sep">/</span>
+  <a href="{{ page.permalink }}" class="no-border hover-underline">{{ page.title }}</a>
+  <hr />
 </nav>
 
-<article id="{{page.slug }}">
-  <h2>
+<article id="{{ page.slug }}">
+
+  <div class="title">
     <a href="{{ page.permalink }}">{{ page.title }}</a>
-  </h2>
-  {% if page.date %}
-  <div class="post-metadata">
-    <div class="date-published">
-      <time datetime="{{ page.date }}">{{ page.date | date(format="%d %B %Y") }}</time>
-    </div>
-    {%- if page.extra.updated %}
-    <div class="date-updated">
-      <span class="ornament">&middot;</span><em><span class="updated small-caps">updated</span>
+    {% if page.date %}
+    <div class="post-metadata">
+      <div class="date-published">
+        <time datetime="{{ page.date }}">{{ page.date | date(format="%d %B %Y") }}</time>
+      </div>
+      {%- if page.extra.updated %}
+      <div class="date-updated">
+        <span class="ornament">&middot;</span><em><span class="updated small-caps">updated</span>
         <time datetime="{{ page.extra.updated }}">{{ page.extra.updated | date(format="%d %B %Y") }}</time>
       </em>
+      </div>
+      {% endif %}
     </div>
     {% endif %}
   </div>
-  {% endif %}
 
   <div class="post-body">
     {{ page.content | safe }}

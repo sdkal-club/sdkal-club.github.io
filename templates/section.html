@@ -15,26 +15,99 @@
       <a href="{{ config.base_url }}/{{ section.path }}" class="no-border hover-underline">{{ section.title }}</a>
     {% endif %}
   {% endfor %}
+  <span class="breadcrumb-sep">/</span>
+  <a href="{{ config.base_url }}/{{ section.path }}" class="no-border hover-underline">{{ section.title }}</a>
+  <hr />
 </nav>
 
-<main class="{{ section.extra.main_class | default(value="") }}">
+<main class="{{ section.extra.type | default(value="") }}">
+  {% if section.extra.type == "posts" %}
+    <div class="title">
+      <a href="{{ config.base_url }}/{{ section.path }}">{{ section.title }}</a>
+    </div>
 
-  <hr />
+    {{ section.content | safe }}
 
-  <h2>{{ section.title }}</h2>
+    {% set_global pages = [] %}
+    {% set section = get_section(path="posts/_index.md", metadata_only=true) %}
+    {% set subsections = section.subsections %}
+    {% for subsection_path in subsections %}
+      {% set subsection = get_section(path=subsection_path) %}
+      {% set_global pages = pages | concat(with=subsection.pages) %}
+    {% endfor %}
+    {% set_global pages = pages | sort(attribute="date") | reverse %}
+    {% for page in pages %}
+      {% include "article.html" %}
+    {% endfor %}
+  {% endif %}
 
-  {{ section.content | safe }}
+  {% if section.extra.type == "member" %}
+    <div class="title">
+      <a href="{{ config.base_url }}/{{ section.path }}">{{ section.title }}</a>
+    </div>
 
-  {% set_global pages = paginator.pages %}
-  {% set section = get_section(path="posts/_index.md", metadata_only=true) %}
-  {% set subsections = section.subsections %}
-  {% for subsection_path in subsections %}
-    {% set subsection = get_section(path=subsection_path) %}
-    {% set_global pages = pages | concat(with=subsection.pages) %}
-  {% endfor %}
-  {% set_global pages = pages | sort(attribute="date") | reverse %}
-  {% for page in pages %}
-    {% include "article.html" %}
-  {% endfor %}
+    <div class="flex">
+      <div class="posts-section">
+        <div class="subtitle">Introduction</div>
+        <article>
+          {{ section.content | safe }}
+        </article>
+        <br />
+      </div>
+      <div class="pages-section">
+        <div class="subtitle">Posts</div>
+        {% set pages = section.pages | sort(attribute="date") | reverse %}
+        {% for page in pages %}
+          <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+          <div class="post-metadata">
+            <div class="date-published">
+              <time datetime="{{ page.date }}">{{ page.date | date(format="%d %B %Y") }}</time>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if section.extra.type == "member_list" %}
+    <div class="content">
+      <div class="title">
+        <a href="{{ config.base_url }}/{{ section.path }}">{{ section.title }}</a>
+      </div>
+
+      {{ section.content | safe }}
+
+      {% set section = get_section(path="posts/_index.md", metadata_only=true) %}
+      {% set subsections = section.subsections %}
+      {% for subsection_path in subsections %}
+        {% set subsection = get_section(path=subsection_path) %}
+        <div class="name"><a href="{{ config.base_url }}/{{ subsection.path }}">{{ subsection.extra.fullname }}</a></div>
+        <div class="introduction">{{ subsection.extra.intro }}</div>
+        <br />
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if section.extra.type == "highlights" %}
+    <div class="title">
+      <a href="{{ config.base_url }}/{{ section.path }}">{{ section.title }}</a>
+    </div>
+    {{ section.content | safe }}
+    {% set_global pages = [] %}
+    {% set section = get_section(path="posts/_index.md", metadata_only=true) %}
+    {% set subsections = section.subsections %}
+    {% for subsection_path in subsections %}
+      {% set subsection = get_section(path=subsection_path) %}
+      {% set_global pages = pages | concat(with=subsection.pages) %}
+    {% endfor %}
+    {% set_global pages = pages | sort(attribute="date") | reverse %}
+    {% for page in pages %}
+      {% set highlight = page.extra.highlight | default(value=false) %}
+      {% if highlight %}
+        <meta http-equiv="refresh" content="0; URL={{ page.permalink }}" />
+        <p>If you have not been redirected, please click this link directly: <a href="{{ page.permalink }}">{{ page.permalink }}</a></p>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 </main>
 {% endblock %}

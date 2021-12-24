@@ -3,15 +3,13 @@ title = "San Diego Killifish & Livebearers Group"
 
 [extra]
 body_class = "home"
-short_intro = "Welcome to the San Diego Killifish and Livebearer Group! We are a group of hobbists who maintain and breed various killifish and livebearer species and strains. From wild types to aquarium strains, these fascinating, and often hardy and personable fish keep us entertained. By keeping this group together, we hope that you, as new or experienced fishkeeper, would join in with the fun."
+short_intro = "Welcome to the joint homepage for the San Diego Killifish Group and Livebearer Group! Although organized as two local groups, we share our interests in maintain and breed various killifish and livebearer species and strains. From wild types to aquarium strains, these fascinating, and often hardy and personable fish keep us entertained. We hope that you, as new or experienced fishkeeper, would join in with the fun."
 +++
 
-Everyone is welcome to become a club member. We do not charge an admission fee at this time.
-Registered members will get a personal homepage on this website, where they may post a list of species they maintain and introduce to others about their fishkeeping hobby in general.
-Registered members may also post articles under our "Member Posts" section.
+As open groups, you are welcome to join our monthly meetings. You may also contact us at the meetings to create personal homepage on this website, where you may post a list of species which you maintain and introduce to others about your fishkeeping hobby in general.
+You are also welcome to submit articles under our “Member Posts” section. Please see the "About" page for more directions.
 
-Our club meets on the 3rd Sunday every month at 10:30 A.M., where we hold a speaker presentation, an auction, and general discussion/socializing periods.
-Our meeting location:
+Our groups host joint meetings on the 3rd Sunday every month at 10:30 A.M., where we hold a speaker presentation, an auction, and general discussion/socializing periods. Our meeting location is as follows:
 
 **Boll Weevil at Lakeside, CA**
 

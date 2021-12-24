@@ -8,11 +8,12 @@ $link-color: hsl(204, 50.8%, 26.1%);
 
 #google-map {
   height: 15em;
-  width: 100%;
+  width: 95%;
 }
 
 @font-face {
   font-family: "Manrope VF";
+  //noinspection CssUnknownTarget
   src: url("ManropeGX.ttf") format("truetype-variations");
   font-style: normal;
   font-weight: 200 800;
@@ -22,51 +23,59 @@ html {
   background-color: #ffffff;
   min-height: 100%;
 }
+
 body {
-  margin:40px auto;
-  max-width: 800px;
-  line-height:1.6;
+  margin: 3em auto;
+  max-width: 65em;
+  line-height: 1.6;
   font-family: "Manrope VF", sans-serif;
-  font-size:18px;
+  font-size: 14pt;
   color: #444;
-  padding: 0 10px;
+  padding: 0 1.5em;
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
-body.home {
-  max-width: 1000px;
-}
+
 pre, code {
   font-family: "Pragmata Pro", "Pragmata Pro Mono", "JetBrains Mono", "Iosevka", "Consolas", monospace;
 }
+
 :not(pre) > code {
   background-color: #ffedf0;
   padding: 0.1em 0.2em;
   font-size: 16px;
   border-radius: 3px;
 }
+
 pre {
   padding: 0.5em 1em;
   overflow-y: auto;
   font-size: 14px;
   color: #fcfcfc;
 }
-h1,h2,h3,h4 {
+
+h1, h2, h3, h4 {
   font-family: $heading-family;
   margin: $heading-margin;
   line-height: 1.2;
 }
-h1,h2 {
+
+h1, h2 {
   font-weight: 300;
 }
+
 h3 {
   font-weight: 400;
 }
+
 main img {
   max-width: 100%;
 }
+
 main.posts {
+  max-width: 60rem;
+
   h2 {
     font-size: 2em;
     font-weight: 500;
@@ -78,15 +87,19 @@ main.posts {
     h3 {
       font-size: 1.5em;
     }
+
     .post-metadata {
-      font-size: smaller;
+      font-size: 1rem;
+      font-style: italic;
       color: #666;
     }
   }
+
   section h2 {
     margin-bottom: 1em;
   }
 }
+
 main.home {
   h1 {
     text-align: center;
@@ -94,36 +107,51 @@ main.home {
     font-weight: 200;
     line-height: 1.2;
   }
+
   h2 {
     font-size: 2em;
     font-weight: 800;
     position: relative;
     left: -2px;
   }
+
   h3 {
     font-weight: 300;
   }
-  .header {
-    display: inline-flex;
-    flex-wrap: wrap;
 
-    .line-break {
-      width: 100%;
-    }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 0 3em 0;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 1em;
+
     .logo {
+      display: block;
       max-width: 5em;
+      max-height: 5em;
+      object-fit: cover;
+      margin: 0;
+      padding: 0;
     }
+
     .text {
       font-weight: 200;
-      line-height: 1.2;
-      margin-left: 2em;
-      margin-top: -1.3em;
+      line-height: 1.5;
+
       .title {
+        margin: 0;
+        padding: 0;
         font-size: 3.5em;
       }
+
       .subtitle {
+        margin: 0;
+        padding: 0;
         font-size: 2.5em;
-        margin-top: -1.3em;
       }
     }
   }
@@ -132,67 +160,132 @@ main.home {
     h3 {
       font-size: 1.5em;
     }
+
     .post-metadata {
-      font-size: smaller;
+      font-size: 1rem;
+      font-style: italic;
       color: #666;
     }
   }
+
   section h2 {
     margin-bottom: 1em;
+  }
+}
+
+main {
+  .title {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+
+    .post-metadata {
+      display: flex;
+      flex-wrap: wrap;
+      font-weight: 500;
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+
+      em {
+        color: #7a7a7a;
+        font-style: oblique 10deg;
+
+        .updated {
+          margin-right: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+main.member_list {
+  .content {
+    max-width: 50em;
+    .name {
+      font-size: 1.5em;
+    }
   }
 }
 
 a {
   text-decoration: underline;
 }
+
 a:link, a:visited {
   color: $link-color;
 }
+
 .hover-underline:hover {
   border-bottom: 1px solid currentColor;
 }
+
 nav a:link, nav a:visited {
   color: #666;
 }
+
 .intro {
   max-width: 80em;
   margin: 0 auto 3em;
 }
-.post-metadata {
-  display: flex;
-  flex-wrap: wrap;
-  font-weight: 500;
-  color: #555;
 
-  em {
-    color: #7a7a7a;
-    font-style: oblique 10deg;
+article {
+  max-width: 50em;
 
-    .updated {
-      margin-right: 0.5em;
+  .title {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+
+    .post-metadata {
+      display: flex;
+      flex-wrap: wrap;
+      font-weight: 500;
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+
+      em {
+        color: #7a7a7a;
+        font-style: oblique 10deg;
+
+        .updated {
+          margin-right: 0.5em;
+        }
+      }
     }
   }
-}
-article {
-  h2,h3 {
+
+  iframe {
+    display: block;
+    margin: 3em auto;
+    width: 50%;
+    height: 20rem;
+  }
+
+  h2, h3 {
     a:link, a:visited {
       color: currentColor;
       text-decoration: none;
       border-bottom: 2px solid currentColor;
     }
   }
+
   h2 {
-    font-size: 2.5em;
-  }
-  h3 {
     font-size: 2em;
-    font-weight: 300;
-    line-height: 1.5;
+    margin: 1em 0;
   }
+
+  h3 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin: 1em 0;
+  }
+
   h4 {
     font-size: 1.25em;
     font-weight: 400;
+    margin: 1em 0;
   }
+
   blockquote {
     border-left: 3px solid skyblue;
     font-style: oblique 10deg;
@@ -201,6 +294,7 @@ article {
     margin: 1em 0;
     clear: both;
   }
+
   aside {
     padding: 1em 1em 0;
     box-sizing: border-box;
@@ -214,29 +308,53 @@ article {
       margin-bottom: 0.5em;
     }
   }
+
   aside.float-right {
     margin: 0 0 1em 1em;
   }
+
+  .post-metadata {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+
+    em {
+      color: #7a7a7a;
+      font-style: oblique 10deg;
+
+      .updated {
+        margin-right: 0.5em;
+      }
+    }
+  }
 }
+
 img, canvas, iframe, video, svg {
   max-width: 100%;
   margin: 0 auto;
 }
+
 figure {
   margin: 0 auto 1.5em;
 }
+
 figcaption {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
 }
+
 footer {
   color: #888;
   font-size: 14px;
   border-top: 1px solid #AAA;
-  margin: 1em 0px 2em;
+  margin: 1em 0 2em;
   clear: both;
 }
+
 footer .copyright {
   margin-top: 1em;
 }
@@ -245,18 +363,28 @@ footer .copyright {
   border: none;
   text-decoration: none;
 }
+
 .text-center {
   text-align: center;
 }
+
 .text-smaller {
   font-size: 0.5em;
 }
+
 .flex {
   display: flex;
+  column-gap: 3em;
+  .subtitle {
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 1em;
+  }
 }
 
 .logo {
   font-size: 1.75em;
+
   a {
     color: #555;
   }
@@ -290,10 +418,12 @@ footer .copyright {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .action-button-ghost {
   background-color: initial;
   color: $link-color;
 }
+
 .action-button-ghost:hover {
   background-color: $link-color;
   color: white;
@@ -301,17 +431,18 @@ footer .copyright {
 
 .posts-section {
   width: 100%;
+  flex: 2;
 
   article {
     margin-bottom: 3em;
   }
 }
-.projects-section {
-  width: 300px;
-  flex-shrink: 0;
-  margin-left: 2em;
+
+.pages-section {
+  flex: 1;
 }
-ul.projects {
+
+ul.pages {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -319,6 +450,7 @@ ul.projects {
   li {
     margin: 1em 0;
   }
+
   i {
     display: inline-block;
     font-size: 1.2em;
@@ -326,6 +458,7 @@ ul.projects {
     vertical-align: middle;
     margin-right: 0.2em;
   }
+
   p {
     margin-left: 2.5em;
     font-size: smaller;
@@ -344,6 +477,7 @@ ul.projects {
 .footnote-definition {
   font-size: smaller;
 }
+
 .footnote-definition-label {
   float: left;
   margin-right: 0.5em;
@@ -354,15 +488,18 @@ ul.projects {
   vertical-align: top;
   margin-right: 9px;
 }
+
 .ornament {
   display: inline-block;
   margin: 0 auto;
   width: 33px;
   text-align: center;
 }
+
 .screenshot img {
   border: 1px solid #666;
 }
+
 .media-source {
   font-size: 12px;
   display: block;
@@ -372,6 +509,7 @@ ul.projects {
   float: right;
   margin: 0.5em 0 1em 1em;
 }
+
 .float-right {
   float: right;
 }
@@ -421,11 +559,8 @@ ul.projects {
   .home .flex {
     flex-direction: column
   }
-  .projects-section {
-    margin: 0;
-    width: auto;
-  }
 }
+
 @media screen and (max-width: 600px) {
   article {
     h2 {
@@ -435,6 +570,7 @@ ul.projects {
     }
   }
 }
+
 @media screen and (max-width: 375px) {
   main.home {
     h1 {
