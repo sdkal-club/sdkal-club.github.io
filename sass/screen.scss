@@ -374,6 +374,7 @@ footer .copyright {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 3em;
   .subtitle {
     font-size: 2em;
