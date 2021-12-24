@@ -36,3 +36,6 @@ tags
 
 # KWrite/Others
 *.*swp
+
+# IDEA
+.idea
