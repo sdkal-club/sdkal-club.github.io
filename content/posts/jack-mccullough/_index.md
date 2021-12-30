@@ -15,37 +15,41 @@ I keep killifish and other egg-laying species.
 - GitHub: [@senseijack](https://github.com/senseijack)
 
 ## Current Species 🐠
-#### Family Anablepidae
-- #### Genus Jenynsia 
-  - *Jenynsia onca* (*"'Jaguar' or 'One-sided' Livebearer"*)
-#### Family Goodeidae
-- #### Genus Xenotoca  
+## Livebearers:
+**Family Anablepidae**
+- Genus Jenynsia 
+  - *Jenynsia onca* (*"'Jaguar' or 'One-sided' Livebearer"*)  
+
+**Family Goodeidae**
+- Genus Xenotoca  
   - *Xenotoca doadrioi (San Marcos)*  (*"Redtail Splitfin"*)
   - *X. eiseni*  (*"The 'original' Redtail Splitfin"*)
-- #### Genus Characodon  
-  - *Characodon lateralis* (*"Rainbow Goodeid"*)
-#### Family Poeciliidae
-- #### Genus Gambusia  
+- Genus Characodon  
+  - *Characodon lateralis* (*"Rainbow Goodeid"*)  
+
+**Family Poeciliidae**
+- Genus Gambusia  
   - *Gambusia affinis* (*"Western Mosquitofish"*)
-- #### Genus Girardinus   
+- Genus Girardinus   
   - *Girardinus metallicus*  (*"Black Chin Livebearer"*)
-- #### Genus Heterandria  
+- Genus Heterandria  
   - *Heterandria formosa* (*"Least Killifish"*)
-- #### Genus Limia  
+- Genus Limia  
   - *Limia perugiae*  (*"Perugia's Limia"*)
   - *L. nigrofasciata*  (*"Humpbacked Limia"*)
-- #### Genus Xiphophorus
+- Genus Xiphophorus
   - *Xiphophorus nezahualcoyotl*  (*"Mountain Swordtail"*)
   - *X. malinche*  (*"Highland Swordtail"*)
-  - *X. helleri (Rio Otapa)*  (*"Green Swordtail"*)
+  - *X. helleri - Rio Otapa*  (*"Green Swordtail"*)
   - *X. alverezi*  (*"Chiapas Swordtail"*)
-  - *X. birchmanni (Rio Coacuilco)* (*"Sheephead Swordtail"*)
+  - *X. birchmanni - Rio Coacuilco* (*"Sheephead Swordtail"*)
   - *X. mayae*  
 
-#### Family Zenarchopteridae 
-- #### Genus Dermogenys
-  - *Dermogenys pusilla (Aquarium strain)* (*"Wrestling Halfbeak"*)
-### Domestic (hybrid) Poeciliidae
+**Family Zenarchopteridae** 
+- Genus Dermogenys
+  - *Dermogenys pusilla (Aquarium strain)* (*"Wrestling Halfbeak"*)  
+  
+**Domestic (hybrid) Poeciliidae**
 - *Swordtails*
   - *Pineapple Swordtail*  
   - *Sanke Koi Swordtail*
@@ -55,37 +59,40 @@ I keep killifish and other egg-laying species.
 - *Platy*
   - *Bumblebee Platy*
   - *Tuxedo Hifin Platy*  
-### Egg layers
-#### Family Adrianichthyidae
-- #### Genus Oryzias
+## Egg layers:
+**Family Adrianichthyidae**
+- Genus Oryzias
   - *Oryzias woworae* (*"Daisy's Ricefish"*)
   - *Oryzias latipes (Aquarium strains)*
     - *Paltinum Medaka*
     - *Red-cap Lame Medaka*
     - *Black and White Lame Medaka*
     - *Orange and White Lame Medaka*
-#### Family Characidae
-- #### Genus Hyphessobrycon
+ 
+**Family Characidae**
+- Genus Hyphessobrycon
   - *Hyphessobrycon amandae* (*"Ember Tetra"*)
-- #### Genus Paracheirodon  
-  - *Paracheirodon axelrodi* (*"Cardinal Tetra"*)
-#### Family Cyprinidae
-- #### Genus Danio
+- Genus Paracheirodon  
+  - *Paracheirodon axelrodi* (*"Cardinal Tetra"*)  
+  
+**Family Cyprinidae**
+- Genus Danio
   - *Danio margaritatus* (*"Celestial Pearl Danio"*)
-- #### Genus Boraras
+- Genus Boraras
   - *Boraras brigittae* (*"Mosquito Rasbora"*)
-- #### Genus Pimephales
+- Genus Pimephales
   - *Pimephales promelas* (*"Fathead/Rosy Minnow"*)
-- #### Genus Tanichthys
+- Genus Tanichthys
   - *Tanichthys albonubes* (*"White Cloud Mountain Minnow"*)
-- #### Genus Rasbora
-  - *Rasbora trilineata* (*"Scissortail Rasbora"*)
-#### Family  Nothobranchiidae
-- #### Genus Nothobranchius
+- Genus Rasbora
+  - *Rasbora trilineata* (*"Scissortail Rasbora"*)  
+  
+**Family  Nothobranchiidae**
+- Genus Nothobranchius
   - *Nothobranchius guentheri Zanziba* (*"Redtail Notho"*) From John Pitcairn
   - *N. furzeri MZCS 28*... (*"Turquoise Killifish"*) hatching soon 🤞, from John Pitcairn  
   - *N. korthausae "Red"*... (*"Yellow Korthaus Killifish"*) hatching soon 🤞, from John Pitcairn   
   - *N. rachovii beira*... (*"Bluefin Notho"*) hatching soon 🤞, from Jim Kostich
-- #### Genus Fundulopanchax
+- Genus Fundulopanchax
   - *Fundulopanchax scheeli* (*"Emerald Aphyosemion"*), from John Pitcairn)
 
