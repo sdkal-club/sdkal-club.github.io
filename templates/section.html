@@ -12,18 +12,18 @@
       <a href="{{ config.base_url }}{{ section.path }}" class="no-border hover-underline">Home</a>
     {% else %}
       <span class="breadcrumb-sep">/</span>
-      <a href="{{ config.base_url }}/{{ section.path }}" class="no-border hover-underline">{{ section.title }}</a>
+      <a href="{{ config.base_url }}{{ section.path }}" class="no-border hover-underline">{{ section.title }}</a>
     {% endif %}
   {% endfor %}
   <span class="breadcrumb-sep">/</span>
-  <a href="{{ config.base_url }}/{{ section.path }}" class="no-border hover-underline">{{ section.title }}</a>
+  <a href="{{ config.base_url }}{{ section.path }}" class="no-border hover-underline">{{ section.title }}</a>
   <hr />
 </nav>
 
 <main class="{{ section.extra.type | default(value="") }}">
   {% if section.extra.type == "posts" %}
     <div class="title">
-      <a href="{{ config.base_url }}/{{ section.path }}">{{ section.title }}</a>
+      <a href="{{ config.base_url }}{{ section.path }}">{{ section.title }}</a>
     </div>
 
     {{ section.content | safe }}
@@ -43,7 +43,7 @@
 
   {% if section.extra.type == "member" %}
     <div class="title">
-      <a href="{{ config.base_url }}/{{ section.path }}">{{ section.title }}</a>
+      <a href="{{ config.base_url }}{{ section.path }}">{{ section.title }}</a>
     </div>
 
     <div class="flex">
@@ -72,7 +72,7 @@
   {% if section.extra.type == "member_list" %}
     <div class="content">
       <div class="title">
-        <a href="{{ config.base_url }}/{{ section.path }}">{{ section.title }}</a>
+        <a href="{{ config.base_url }}{{ section.path }}">{{ section.title }}</a>
       </div>
 
       {{ section.content | safe }}
@@ -81,7 +81,7 @@
       {% set subsections = section.subsections %}
       {% for subsection_path in subsections %}
         {% set subsection = get_section(path=subsection_path) %}
-        <div class="name"><a href="{{ config.base_url }}/{{ subsection.path }}">{{ subsection.extra.fullname }}</a></div>
+        <div class="name"><a href="{{ config.base_url }}{{ subsection.path }}">{{ subsection.extra.fullname }}</a></div>
         <div class="introduction">{{ subsection.extra.intro }}</div>
         <br />
       {% endfor %}
@@ -90,7 +90,7 @@
 
   {% if section.extra.type == "highlights" %}
     <div class="title">
-      <a href="{{ config.base_url }}/{{ section.path }}">{{ section.title }}</a>
+      <a href="{{ config.base_url }}{{ section.path }}">{{ section.title }}</a>
     </div>
     {{ section.content | safe }}
     {% set_global pages = [] %}

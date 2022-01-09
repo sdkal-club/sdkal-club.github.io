@@ -20,7 +20,7 @@
       <a href="{{ config.base_url }}{{ section.path }}" class="no-border hover-underline">Home</a>
     {% else %}
       <span class="breadcrumb-sep">/</span>
-      <a href="{{ config.base_url }}/{{ section.path }}" class="no-border hover-underline">{{ section.title }}</a>
+      <a href="{{ config.base_url }}{{ section.path }}" class="no-border hover-underline">{{ section.title }}</a>
     {% endif %}
   {% endfor %}
   <span class="breadcrumb-sep">/</span>
