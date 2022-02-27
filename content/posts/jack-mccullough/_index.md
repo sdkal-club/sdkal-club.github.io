@@ -21,6 +21,8 @@ I primarily keep and breed livebearing species with an emphasis on wild types. I
 - #### Genus Characodon  
   - *Characodon lateralis*
 #### Family Poeciliidae
+- #### Genus Poeciliopsis
+  - *Poeciliopsis gracilis*
 - #### Genus Gambusia  
   - *Gambusia affinis*
 - #### Genus Girardinus   
@@ -37,6 +39,7 @@ I primarily keep and breed livebearing species with an emphasis on wild types. I
   - *X. alverezi*  
   - *X. birchmanni (Rio Coacuilco)*
   - *X. mayae*
+  - *X. evelynae*
 
 ### Domestic (hybrid) Poeciliidae
 - *Swordtails*
@@ -59,7 +62,7 @@ I primarily keep and breed livebearing species with an emphasis on wild types. I
     - *Orange and White Lame Medaka*
 #### Family  Nothobranchiidae
 - #### Genus Nothobranchius
-  - *Nothobranchius guentheri Zanziba* From John Pitcairn
+  - *Nothobranchius guentheri Zanzibar* From John Pitcairn
   - *N. furzeri MZCS 28*... hatching soon 🤞 (from John Pitcairn)  
   - *N. korthausae "Red"*... hatching soon 🤞 (from John Pitcairn)   
   - *N. rachovii beira*... hatching soon 🤞
