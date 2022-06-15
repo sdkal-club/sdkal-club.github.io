@@ -26,9 +26,16 @@ If you are interested in obtaining any of these species, please contact me for a
 Adrianichthyidae / Ricefish
 
 - *Oryzias sp.* ("Platinum White Medaka")
+- *Oryzias sp.* ("Ujo Sansyoku Medaka")
+
+Cyprinidae / Carps
+
+- *Acheilognathus macropterus* ("Rainbow Bitterlings")
 
 Goodeidae / Splitfins
 
+- *Ameca splendens*, Rio Teuchitlán
+- *Skiffia multipunctata*, Lago de Camécuaro
 - *Xenotoca doadrioi*, San Marcos
 - *Zoogoneticus tequila*, Rio Teuchitlán
 
@@ -39,10 +46,18 @@ Nothobranchiidae / African Rivulines
 Poeciliidae / Livebearing Toothcarps
 
 - *Girardinus metallicus* (Yellow and black strain from Marc Allen)
-- *Limia nigrofasciata* ("The Humpback Limia")
+- *Limia nigrofasciata* ("Humpback Limia")
 - *Limia perugiae* ("Perugia's Limia")
 - *Poecilia latipinna*, Southern Florida ("Sailfin Mollies")
+- *Poecilia latipinna*, Salton Sea - California Aquatic Farm, 2022 ("Sailfin Mollies")
+- *Poecilia salvatoris*, Salton Sea - Salton Sea Farms, 2022 ("Liberty Mollies")
+- *Poecilia sp.*, ("Red Tailed Dalmatian Mollies")
+- *Poecilia velifera*, Yucatán ("Yucatán Mollies")
+- *Poeciliopsis gracilis*, Salton Sea - Salton Sea Farms, 2022 ("Porthole Livebearer")
+- *Priapella compressa* ("Blue Eyed Livebearer")
 - *Xiphophorus birchmanni*, Orizatlán (Yellow fin strain from Mobetta/Darrell Nekoba)
+- *Xiphophorus helleri*, Río Otapa ("Río Otapa Swordtails")
+- *Xiphophorus maculatus*, Río Papaloapan ("Río Papaloapan Platies")
 - *Xiphophorus mayae*
 - *Xiphophorus sp.* ("Berlin Red Swordtail")
 
