@@ -59,7 +59,8 @@ Poeciliidae / Livebearing Toothcarps
 - *Xiphophorus helleri*, Río Otapa ("Río Otapa Swordtails")
 - *Xiphophorus maculatus*, Río Papaloapan ("Río Papaloapan Platies")
 - *Xiphophorus mayae*
-- *Xiphophorus sp.* ("Berlin Red Swordtail")
+- *Xiphophorus sp.* ("Black Berlin Swordtails")
+- *Xiphophorus sp.* ("Red Berlin Swordtails")
 
 ## Wishlist
 
