@@ -3,7 +3,7 @@ title = "Marc Allen"
 sort_by = "date"
 extra.type = "member"
 extra.fullname = "Marc Allen"
-extra.intro = "Local breeder from San Diego"
+extra.intro = "Local breeder from San Diego."
 +++
 
 ## Contact Information
