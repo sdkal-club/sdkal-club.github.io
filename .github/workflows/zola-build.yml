@@ -5,26 +5,22 @@ on:
   pull_request:
 jobs:
   build:
-    runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/main'
+    runs-on: ubuntu-22.04
     steps:
       - name: 'Checkout'
-        uses: actions/checkout@main
-      - name: 'Build only' 
-        uses: shalzz/zola-deploy-action@master
+        uses: actions/checkout@v3
+      - name: 'Build'
+        uses: shalzz/zola-deploy-action@v0.15.3
         env:
           BUILD_DIR: .
           TOKEN: ${{ secrets.DEPLOY_TOKEN }}
           BUILD_ONLY: true
-  build_and_deploy:
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - name: 'Checkout'
-        uses: actions/checkout@main
-      - name: 'Build and deploy'
-        uses: shalzz/zola-deploy-action@master
-        env:
-          PAGES_BRANCH: gh-pages
-          BUILD_DIR: .
-          TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+      - name: 'Deploy'
+        if: github.head_ref || github.ref != 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: public
+          clean: true
+          single-commit: true
