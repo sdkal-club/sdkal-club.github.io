@@ -16,7 +16,7 @@ jobs:
           TOKEN: ${{ secrets.DEPLOY_TOKEN }}
           BUILD_ONLY: true
       - name: 'Deploy'
-        if: github.head_ref || github.ref != 'refs/heads/main'
+        if: (! github.head_ref) && (github.ref == 'refs/heads/main')
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
