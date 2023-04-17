@@ -3,26 +3,25 @@ title = "Jack McCullough"
 sort_by = "date"
 extra.type = "member"
 extra.fullname = "Jack McCullough"
-extra.intro = "I primarily keep and breed livebearing species with an emphasis on wild types."
+extra.intro = "Local breeder from La Mesa, focus on Medaka, killifish, and wild type livebearers."
 +++
 
-I primarily keep and breed livebearing species with an emphasis on wild types. I’m particularly interested in the preservation of livebearers in the family Poeciliidae (especially the genus Xiphophorus), and in the family Goodeidae.
+I currently focused on Medaka, killifish, and wild type livebearers. 
 
 ## Contact Information
 
 - Instagram: [@lamesaaquatics](https://www.instagram.com/lamesaaquatics)
-- GitHub: [@senseijack](https://github.com/senseijack)
 
-## Current Species 🐠
-#### Family Goodeidae
+## Current Species 🐠 
+  (click [here](@/posts/jack-mccullough/past-species.md) for past species I've kept)
+
+### Livebearers
+#### **Family Goodeidae**
 - #### Genus Xenotoca  
   - *Xenotoca doadrioi (San Marcos)*  
-  - *X. eiseni*  
-- #### Genus Characodon  
-  - *Characodon lateralis*
-#### Family Poeciliidae
-- #### Genus Poeciliopsis
-  - *Poeciliopsis gracilis*
+- #### Genus Ameca
+  - *Ameca splendens*
+#### **Family Poeciliidae**
 - #### Genus Gambusia  
   - *Gambusia affinis*
 - #### Genus Girardinus   
@@ -31,53 +30,35 @@ I primarily keep and breed livebearing species with an emphasis on wild types. I
   - *Heterandria formosa*
 - #### Genus Limia  
   - *Limia perugiae*  
-  - *L. nigrofasciata*  
 - #### Genus Xiphophorus
-  - *Xiphophorus nezahualcoyotl*  
-  - *X. malinche*  
-  - *X. helleri (Rio Otapa)*  
-  - *X. alverezi*  
-  - *X. birchmanni (Rio Coacuilco)*
+  - *X. helleri-guentheri (Golden stream, Belize)*  
   - *X. mayae*
-  - *X. evelynae*
 
-### Domestic (hybrid) Poeciliidae
-- *Swordtails*
-  - *Pineapple Swordtail*  
-  - *Sanke Koi Swordtail*
-  - *Kohaku Koi Swordtail*
-- *Guppies*
-  - *Tuxedo Koi Guppy*
-- *Platy*
-  - *Bumblebee Platy*
-  - *Tuxedo Hifin Platy*  
 ### Egg layers
-#### Family Adrianichthyidae
-- #### Genus Oryzias
+#### **Family Adrianichthyidae**
+- #### Genus Oryzias {class=jm}
+  - *Oryzias latipes (Aquarium strains - Medaka)*
+    - *Kabuki Blue Medaka*
+    - *Sanshoku Medaka*
+  - *Oryzias javanicus*
   - *Oryzias woworae*
-  - *Oryzias latipes (Aquarium strains)*
-    - *Paltinum Medaka*
-    - *Red-cap Lame Medaka*
-    - *Black and White Lame Medaka*
-    - *Orange and White Lame Medaka*
-#### Family  Nothobranchiidae
-- #### Genus Nothobranchius
-  - *Nothobranchius guentheri Zanzibar* From John Pitcairn
-  - *N. furzeri MZCS 28*... hatching soon 🤞 (from John Pitcairn)  
-  - *N. korthausae "Red"*... hatching soon 🤞 (from John Pitcairn)   
-  - *N. rachovii beira*... hatching soon 🤞
-- #### Genus Fundulopanchax
-  - *Fundulopanchax scheeli* (from John Pitcairn)
-- #### Genus Aphyosemion 
-  - *Aphyosemion striatum (Cap Estérias)*
-#### Famly Cyprinodontidae 
+  
+#### **Famly Cyprinodontidae** 
 - #### Genus Aphanius
   - *Aphanius mento* 
+- #### Genus Jordanella
+  - *Jordanella floridae*
 
-<!-- ## Past Species 🐟
-#### Family Anablepidae
-- #### Genus Jenynsia 
-  - *Jenynsia onca* 
-#### Family Zenarchopteridae 
-- #### Genus Dermogenys
-  - *Dermogenys pusilla (Aquarium strain)*  -->
+#### **Family  Nothobranchiidae**
+- #### Genus Nothobranchius
+  - *Nothobranchius rachovii (beira 98)*
+  - *N. patrizii*
+  - *N. jubbi*
+- #### Genus Fundulopanchax
+  - *Fundulopanchax gulare* 
+  - *F. gardneri (Misaje)*
+- #### Genus Aphyosemion 
+  - *Aphyosemion striatum (Cap Estérias)*
+  - *Chromaphyosemion volcanum (Econdo)*
+
+
