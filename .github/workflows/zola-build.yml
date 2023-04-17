@@ -10,7 +10,7 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v3.0.0
       - name: 'Build'
-        uses: shalzz/zola-deploy-action@v0.17.2
+        uses: Deuchnord/zola-deploy-action@fix/safe-directory #shalzz/zola-deploy-action@v0.17.2
         env:
           BUILD_DIR: .
           TOKEN: ${{ secrets.DEPLOY_TOKEN }}
